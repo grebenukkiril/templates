@@ -11,6 +11,7 @@
     align-items: center;
 }
 .menu {
+    justify-content: end;
     gap: 39px;
     &__item {
         padding: 40px 0 39px 0;
