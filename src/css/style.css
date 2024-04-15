@@ -127,7 +127,7 @@ button {
   }
   .menu {
     position: absolute;
-    top: -150vh;
+    top: -100vh;
     left: 0;
     width: 100%;
     height: 200vh;
@@ -146,7 +146,7 @@ button {
     display: none;
   }
   .header.active .menu {
-    top: -50vh;
+    top: 0;
     opacity: 1;
     transition: opacity 200ms, top 400ms;
   }
