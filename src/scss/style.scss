@@ -1,2 +1,55 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../image/body-background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+input {
+    border: none;
+    outline: none;
+}
+button {
+    border: none;
+}
+// utils
+@import 
+'./utils/vars';
+
+// components
+@import 
+'./components/header',
+'./components/hero',
+'./components/service',
+'./components/about',
+'./components/portfolio',
+'./components/project',
+'./components/video',
+'./components/form-section',
+'./components/footer';

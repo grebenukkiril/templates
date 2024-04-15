@@ -1,0 +1,54 @@
+.hero {
+    padding-bottom: 350px;
+    margin-bottom: 110px;
+    &__content {
+        gap: 20px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 134.09%;
+        width: 829px;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        padding: 13px 36px 15px 36px;
+        background-color: $blueColor;
+        border-radius: 30px;
+        transition: background-color 170ms;
+        &:hover{
+            background-color: $blackBlueColor;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .hero{
+        &__title{
+            width: 735px;
+            font-size: 45px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        &__title{
+            width: 500px;
+            font-size: 35px;
+        }
+    }
+}
+@media (max-width: 570px){
+    .hero{
+        &__title{
+            width: 330px;
+            font-size: 26px;
+        }
+    }
+}

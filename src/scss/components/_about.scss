@@ -1,0 +1,73 @@
+.about {
+    background-color: #F6F6F8;
+    padding: 100px 0 70px 0;
+    &__content {
+        margin-bottom: 90px;
+        gap: 91px;
+    }
+    &__text-wrapper {
+        width: 489px;
+        gap: 42px;
+    }
+    &__title {
+        color: $blackColor;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 146.28%;
+    }
+    &__text {
+        color: var(--grey, #999);
+        font-size: 16px;
+        line-height: 158.47%; /* 25.355px */
+    }
+    &__link {
+        color: var(--Accent, #4985FF);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+    &__img {}
+}
+.facts-list {
+    gap: 100px;
+    padding-top: 69px;
+    border-top: 1px solid $whiteGrayColor;
+    flex-wrap: wrap;
+
+    &__item {
+        gap: 15px;
+        color: $grayColor;
+        font-size: 16px;
+        line-height: 158.47%; /* 25.355px */
+        &::before{
+            content: url('../icomoon/SVG/svg2-v2.svg');
+            width: 104px;
+            height: 37px;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .about{
+        &__content{
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 520px){
+    .about{
+        &__text-wrapper {
+            width: 320px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__img{
+            width: 320px;
+            height: 220px;
+        }
+    }
+    .facts-list{
+        display: none;
+    }
+}

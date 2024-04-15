@@ -1,0 +1,109 @@
+.portfolio {
+    background-image: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%);
+    background-repeat: no-repeat;
+    background-size: 100% 490px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    &__text-wrapper {
+        padding-bottom: 62px;
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 146.28%;
+        width: 540px;
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        padding: 13px 36px 15px 36px;
+        background-color: $blueColor;
+        border-radius: 30px;
+        transition: background-color 170ms;
+        &:hover{
+            background-color: $blackBlueColor;
+        }
+    }
+}
+.portfolio-list {
+    &__item {
+        gap: 30px;
+        width: 350px;
+    }
+    &__img {
+        width: 350px;
+        height: 300px;
+    }
+    &__title {
+        color: $titleBlackColor;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__title--blue {
+        color: $blueColor;
+    }
+    &__text {
+        color: $grayColor;
+        font-size: 16px;
+        line-height: 158.47%; /* 25.355px */
+        margin-bottom: 17px;
+    }
+    &__link {
+        color: $blueColor;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}
+@media (max-width: 1279px){
+    .portfolio__content{
+        padding: 15px;
+    }
+    .portfolio-list{
+        justify-content: center;
+        gap: 10%;
+        &__item:nth-child(2){
+            display: none;
+        }
+    }
+}
+@media (max-width: 767px){
+    .portfolio{
+        &__title{
+            width: 400px;
+            font-size: 29px;
+        }
+        &__text-wrapper {
+            flex-direction: column;
+            gap: 25px;
+            text-align: center;
+        }
+    }
+    .portfolio-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        &__item:nth-child(2){
+            display: flex;
+        }
+    }
+}
+@media (max-width: 420px){
+    .portfolio{
+        &__title{
+            width: 300px;
+        }
+    }
+    .portfolio-list{
+        &__item{
+            width: 300px;
+        }
+        &__img{
+            width: 300px;
+            height: 250px;
+        }
+    }
+}

@@ -1,15 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./src/css/mod-normalize.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                backgroundSize: {
+                    'auto': 'auto',
+                    'cover': 'cover',
+                    'contain': 'contain',
+                    '570': '100% 50%',
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./src/css/modern-normalize.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Templates</title>
 </head>
-<body>
 
+<body>
+    <header class="text-white    header" id="header">
+        <div class="mx-auto    container header__inner">
+            <nav class="navigation">
+                <ul class="flex justify-end items-center    menu">
+                    <li class="flex justify-center items-center   menu__item">
+                        <a class="flex justify-center items-center w-full h-full cursor-pointer    menu__link"
+                            href="#hero">Головна</a>
+                    </li>
+                    <li class="flex justify-center items-center   menu__item">
+                        <a class="flex justify-center items-center w-full h-full cursor-pointer    menu__link"
+                            href="#project">Наші проекти</a>
+                    </li>
+                    <li class="flex justify-center items-center   menu__item">
+                        <a class="flex justify-center items-center w-full h-full cursor-pointer    menu__link"
+                            href="#services">Послуги</a>
+                    </li>
+                    <li class="flex justify-center items-center    menu__item">
+                        <a class="flex justify-center items-center w-full h-full cursor-pointer     menu__link"
+                            href="#news">Новини</a>
+                    </li>
+                    <li class="flex justify-center items-center   menu__item">
+                        <a class="flex justify-center items-center w-full h-full cursor-pointer    menu__link"
+                            href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+                <button class="cursor-pointer    burger-button" title="burger menu button" id="burger">
+                    <span class="burger-button__span"></span>
+                    <span class="burger-button__span"></span>
+                    <span class="burger-button__span"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="text-white   hero" id="hero">
+            <div class="mx-auto text-center flex justify-center items-center flex-col    container hero__content">
+                <h3 class="hero__subtitle">Передова IT студія</h3>
+                <h1 class="hero__title">Ми створюємо легкі рішення важких задач і проблем</h1>
+                <a class="hero__link" href="#">Наші проекти</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="mx-auto text-center flex justify-center items-center flex-col    container services__content">
+                <h2 class="services__title">
+                    Ми створюємо мобільні додатки для великих корпорацій </h2>
+                <p class="services__text">
+                    Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є
+                    стандартною "рибою" для текстів на латиниці з початку XVI ст.
+                </p>
+                <ul class="flex justify-between items-start text-left flex-wrap    services-list">
+                    <li class="flex justify-between items-start    services-list__item">
+                        <div class="flex flex-col justify-center items-start    services-list__text-box">
+                            <h3 class="services-list__title">Створення сайтів</h3>
+                            <p class="services-list__text">Lorem Ipsum - це текст-"риба", часто використовує у пресі та
+                                веб-дизайні.</p>
+                        </div>
+                    </li>
+                    <li class="flex justify-between items-start    services-list__item">
+                        <div class="flex flex-col justify-center items-start    services-list__text-box">
+                            <h3 class="services-list__title">Створення сайтів</h3>
+                            <p class="services-list__text">Lorem Ipsum - це текст-"риба", часто використовує у пресі та
+                                веб-дизайні.</p>
+                        </div>
+                    </li>
+                    <li class="flex justify-between items-start    services-list__item">
+                        <div class="flex flex-col justify-center items-start    services-list__text-box">
+                            <h3 class="services-list__title">Створення сайтів</h3>
+                            <p class="services-list__text">Lorem Ipsum - це текст-"риба", часто використовує у пресі та
+                                веб-дизайні.</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="text-white  services__link" href="#">Всі послуги</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="mx-auto    container">
+                <div class="flex items-center justify-center     about__content">
+                    <div class="flex items-start justify-center flex-col    about__text-wrapper">
+                        <h2 class="about__title">Високі стандарти розробки</h2>
+                        <p class="about__text">Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
+                            веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з початку XVI ст.</p>
+                        <a class="about__link" href="#">Детальніше про компанію</a>
+                    </div>
+                    <img class="about__img" src="./src/image/img__about.png" alt="about image">
+                </div>
+                <ul class="flex items-center justify-center    facts-list">
+                    <li class="flex items-center justify-center flex-col    facts-list__item">Our projects</li>
+                    <li class="flex items-center justify-center flex-col    facts-list__item">Our projects</li>
+                    <li class="flex items-center justify-center flex-col    facts-list__item">Our projects</li>
+                    <li class="flex items-center justify-center flex-col    facts-list__item">Our projects</li>
+                    <li class="flex items-center justify-center flex-col    facts-list__item">Our projects</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="mx-auto    container portfolio__content">
+                <div class="flex justify-between items-center text-white    portfolio__text-wrapper">
+                    <h2 class="portfolio__title">Наші роботи на яких ми спеціалізуємось</h2>
+                    <a class="portfolio__link" href="#">Всі послуги</a>
+                </div>
+                <ul class="flex justify-between items-start    portfolio-list">
+                    <li class="flex flex-col     portfolio-list__item">
+                        <img class="portfolio-list__img" src="./src/image/img__portfolio.png" alt="portfolio image">
+                        <h3 class="portfolio-list__title">
+                            <span class="portfolio-list__title portfolio-list__title--blue">01.</span>
+                            Дослідження і упаковка
+                        </h3>
+                        <p class="portfolio-list__text">
+                            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum
+                            є стандартною "рибою" для текстів на латиниці з початку XVI ст.
+                        </p>
+                        <a class="portfolio-list__link" href="#">Детальніше</a>
+                    </li>
+
+                    <li class="flex flex-col     portfolio-list__item">
+                        <img class="portfolio-list__img" src="./src/image/img__portfolio.png" alt="portfolio image">
+                        <h3 class="portfolio-list__title">
+                            <span class="portfolio-list__title portfolio-list__title--blue">01.</span>
+                            Дослідження і упаковка
+                        </h3>
+                        <p class="portfolio-list__text">
+                            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum
+                            є стандартною "рибою" для текстів на латиниці з початку XVI ст.
+                        </p>
+                        <a class="portfolio-list__link" href="#">Детальніше</a>
+                    </li>
+
+                    <li class="flex flex-col     portfolio-list__item">
+                        <img class="portfolio-list__img" src="./src/image/img__portfolio.png" alt="portfolio image">
+                        <h3 class="portfolio-list__title">
+                            <span class="portfolio-list__title portfolio-list__title--blue">01.</span>
+                            Дослідження і упаковка
+                        </h3>
+                        <p class="portfolio-list__text">
+                            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum
+                            є стандартною "рибою" для текстів на латиниці з початку XVI ст.
+                        </p>
+                        <a class="portfolio-list__link" href="#">Детальніше</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <div class="mx-auto flex flex-col items-center justify-center    container project__content">
+                <h2 class="project__title">Наші проекти</h2>
+                <p class="project__text">
+                    Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є
+                    стандартною "рибою" для текстів на латиниці з початку XVI ст.
+                </p>
+                <ul class="project-list">
+                    <li class="project-list__item">
+                        <img class="project-list__img" alt="project image" src="./src/image/project__img.png">
+                    </li>
+                    <li class="project-list__item">
+                        <img class="project-list__img" alt="project image" src="./src/image/project__img.png">
+                    </li>
+                    <li class="project-list__item">
+                        <img class="project-list__img" alt="project image" src="./src/image/project__img.png">
+                    </li>
+                    <li class="project-list__item">
+                        <img class="project-list__img" alt="project image" src="./src/image/project__img.png">
+                    </li>
+                </ul>
+                <a class="project__link" href="#">Всі проекти</a>
+            </div>
+        </section>
+        <section class="bg-[url('./src/image/video__bg.png')] bg-570 bg-no-repeat    video-setion">
+            <div
+                class="flex flex-col justify-center items-center text-white mx-auto    container video-setion__content">
+                <h2 class="video-setion__title">Відео про нашу роботу</h2>
+                <p class="video-setion__text">Просто подивіться, як ми працюємо</p>
+                <video class="video-setion__video" poster="./src/image/poster.png" controls>
+                    <source src="./src/video/video.mp4" type="video/mp4">
+                    <source src="./src/video/video.webm" type="video/webm">
+                </video>
+            </div>
+        </section>
+        <section class="form-section" id="news">
+            <div class="mx-auto flex flex-col justify-center items-center    container form-section__content">
+                <h3 class="form-section__title">Підпишіться на нашу розсилку</h3>
+                <p class="form-section__text">Корисні статті, акції, новини - отримайте все це зараз!</p>
+                <form class="flex justify-center items-center   mailing-list">
+                    <label class="mailing-list__input-wrapper" for="email">
+                        <input class="mailing-list__input" id="email" type="email" placeholder="Ваш e-mail">
+                    </label>
+                    <button class="mailing-list__btn" type="submit">Підписатися</button>
+                </form>
+                <p class="form-section__text">Ми не шлем спам, і не передаємо нікому ваші дані</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="mx-auto flex flex-col justify-center items-center    container footer__inner">
+            <div class="flex w-full    menu-lists-wrapper">
+                <ul class="flex flex-col justify-center items-start    contact-list">
+                    <li class="title__item">
+                        <h3 class="footer__subtitle">Контактная информация</h3>
+                    </li>
+                    <li class="flex justify-center items-center email    contact-list__item item-efects">
+                        <a class="contact-list__link link-efects" href="mailto:test@test.uk">test@test.uk</a>
+                    </li>
+                    <li class="flex justify-center items-center tel   contact-list__item item-efects">
+                        <a class="contact-list__link link-efects" href="tel:+380965556699">+380 96 555 66 99</a>
+                    </li>
+                    <li class="flex justify-center items-center map   contact-list__item item-efects">
+                        <a class="contact-list__link link-efects"
+                            href="https://maps.app.goo.gl/rBbt5sTEM1UwJF3R6">Тернопіль вул С. Бандери</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col justify-center items-start    main-links-list">
+                    <li class="title__item">
+                        <h3 class="footer__subtitle">Основні посилання</h3>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="main-links-list__link link-efects" href="#hero">Головна</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="main-links-list__link link-efects" href="#project">Наші проекти</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="main-links-list__link link-efects" href="#services">Наші послуги</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="main-links-list__link link-efects" href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col justify-center items-start    footer-project-list">
+                    <li class="title-item">
+                        <h3 class="footer__subtitle">Наші проекти</h3>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="footer-project-list__link link-efects" href="https://www.ukrposhta.ua/ua/">Укрпошта</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="footer-project-list__link link-efects" href="https://gas.ua/uk/home">Нафтогаз</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="footer-project-list__link link-efects" href="https://lvivarnya.com.ua/">Львівська пивоварня</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="footer-project-list__link link-efects" href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D1%83%D1%81%D1%8C%D0%BA%D0%B0_%D0%A2%D0%95%D0%A6">ТЭЦ Калуша</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col justify-center items-start    social-list">
+                    <li class="title__item">
+                        <h3 class="footer__subtitle">Соціальні мережі</h3>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="social-list__link link-efects" href="https://www.linkedin.com/">LinkedIn</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="social-list__link link-efects" href="https://www.instagram.com/">Instagram</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="social-list__link link-efects" href="https://www.facebook.com/">Facebook</a>
+                    </li>
+                    <li class="flex justify-center items-center    item-before item-efects">
+                        <a class="social-list__link link-efects" href="https://twitter.com/?lang-en">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="footer__link" href="#">(с) 2019. Всі права захищені</a>
+        </div>
+    </footer>
     <script src="./src/js/scripts.js"></script>
 </body>
+
 </html>
