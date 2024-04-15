@@ -129,7 +129,7 @@ button {
     position: absolute;
     top: 0;
     left: -200%;
-    width: 100%;
+    width: 200%;
     height: 100vh;
     flex-direction: column;
     gap: 27px;
