@@ -148,7 +148,7 @@ button {
   .header.active .menu {
     left: 0;
     opacity: 1;
-    transition: opacity 200ms, top 400ms;
+    transition: opacity 200ms, left 400ms;
   }
   .header.active .burger-button__span {
     top: 50%;
