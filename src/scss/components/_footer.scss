@@ -1,34 +1,41 @@
 .footer {
     padding: 70px 15px 0;
     background-color: $footerBgColor;
+
     &__inner {
         gap: 100px;
     }
+
     &__subtitle {
         color: $titleBlackColor;
         font-size: 18px;
         font-weight: 600;
         line-height: normal;
     }
+
     &__link {
         color: $grayColor;
         font-size: 13px;
         line-height: 158.47%;
         padding-bottom: 30px;
         transition: all 200ms;
-        &:hover{
+
+        &:hover {
             transform: translateY(-15px);
         }
     }
 }
+
 .menu-lists-wrapper {
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
     padding: 0 15px;
 }
+
 .contact-list {
     gap: 30px;
+
     &__item.email::before {
         content: '';
         background-image: url(../icomoon/SVG/envelope.svg);
@@ -37,7 +44,8 @@
         width: 15px;
         height: 15px;
     }
-    &__item.map::before{
+
+    &__item.map::before {
         content: '';
         background-image: url(../icomoon/SVG/placeholder.svg);
         background-repeat: no-repeat;
@@ -45,7 +53,8 @@
         width: 15px;
         height: 15px;
     }
-    &__item.tel::before{
+
+    &__item.tel::before {
         content: '';
         background-image: url(../icomoon/SVG/call.svg);
         background-repeat: no-repeat;
@@ -53,33 +62,40 @@
         width: 15px;
         height: 15px;
     }
+
     &__link {
         color: inherit;
         font-size: 14px;
         line-height: 158.47%;
     }
 }
+
 .title-item {
     margin-bottom: 5px;
 }
-.link-efects{
+
+.link-efects {
     transition: all 200ms;
 }
+
 .item-efects {
     color: $grayColor;
     font-size: 14px;
     line-height: 158.47%;
     gap: 15px;
-    &:hover{
-        .link-efects{
+
+    &:hover {
+        .link-efects {
             transform: translateX(15px);
         }
     }
 }
+
 .main-links-list {
     gap: 30px;
-    &__link {}
+
 }
+
 .item-before::before {
     content: '';
     background-image: url(../icomoon/SVG/right-arrow.svg);
@@ -88,21 +104,23 @@
     width: 15px;
     height: 15px;
 }
+
 .footer-project-list {
     gap: 30px;
-    &__link {}
 }
+
 .social-list {
     gap: 30px;
-    &__link {}
 }
-@media (max-width: 1024px){
-    .menu-lists-wrapper{
+
+@media (max-width: 1024px) {
+    .menu-lists-wrapper {
         gap: 40px;
     }
 }
-@media (max-width: 540px){
-    .menu-lists-wrapper{
+
+@media (max-width: 540px) {
+    .menu-lists-wrapper {
         flex-wrap: nowrap;
         flex-direction: column;
     }

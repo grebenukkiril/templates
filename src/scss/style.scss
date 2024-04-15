@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -15,13 +16,16 @@ body{
     background-repeat: no-repeat;
     background-position: top;
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 h1,
 h2,
 h3,
@@ -31,20 +35,21 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+
 input {
     border: none;
     outline: none;
 }
+
 button {
     border: none;
 }
+
 // utils
-@import 
-'./utils/vars';
+@import './utils/vars';
 
 // components
-@import 
-'./components/header',
+@import './components/header',
 './components/hero',
 './components/service',
 './components/about',

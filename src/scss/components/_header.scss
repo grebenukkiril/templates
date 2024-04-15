@@ -1,23 +1,26 @@
-
 .header {
     border-bottom: 1px solid $grayBorderColor;
     position: relative;
     padding: 20px;
     margin-bottom: 219px;
 }
+
 .navigation {
     display: flex;
     justify-content: end;
     align-items: center;
 }
+
 .menu {
     justify-content: end;
     gap: 39px;
+
     &__item {
         padding: 40px 0 39px 0;
         position: relative;
         flex-direction: column;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             width: 107px;
@@ -28,10 +31,12 @@
             opacity: 0;
             transition: opacity 300ms;
         }
-        &:hover::after{
+
+        &:hover::after {
             opacity: 1;
         }
     }
+
     &__link {
         font-size: 16px;
         font-style: normal;
@@ -39,26 +44,32 @@
         line-height: normal;
     }
 }
+
 .burger-button {
     display: none;
 }
-@media (max-width: 1200px){
-    .menu{
+
+@media (max-width: 1200px) {
+    .menu {
         justify-content: center;
+
         &__item {
             padding: 30px 0 29px 0;
         }
     }
 }
-@media (max-width: 768px){
-    .header{
+
+@media (max-width: 768px) {
+    .header {
         padding: 15px 10px;
     }
+
     .burger-button {
         display: block;
         position: relative;
         width: 20px;
         height: 20px;
+
         &__span {
             position: absolute;
             width: 20px;
@@ -68,18 +79,21 @@
             top: 0;
             left: 0;
             transition: all 300ms;
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 top: 9px;
                 transition: all 300ms;
             }
-            &:last-child{
+
+            &:last-child {
                 top: auto;
                 bottom: 0;
                 transition: all 300ms;
             }
         }
     }
-    .menu{
+
+    .menu {
         position: absolute;
         top: 0;
         left: -100%;
@@ -92,28 +106,35 @@
         backdrop-filter: blur(5px);
         opacity: 0;
         transition: opacity 300ms, left 400ms;
+
         &__item {
             padding: 0;
-            &::after{
+
+            &::after {
                 display: none;
             }
         }
     }
-    .header.active{
-        .menu{
+
+    .header.active {
+        .menu {
             left: 0;
             opacity: 1;
         }
+
         .burger-button {
             &__span {
                 top: 50%;
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     transform: rotate(45deg);
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     opacity: 0;
                 }
-                &:last-child{
+
+                &:last-child {
                     transform: rotate(-45deg);
                     bottom: auto;
                 }
