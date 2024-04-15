@@ -100,7 +100,7 @@
     }
     .header.active{
         .menu{
-            left: 0;
+            left: -50%;
             opacity: 1;
             transition:  opacity 200ms, left 400ms;
         }
