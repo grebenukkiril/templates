@@ -146,7 +146,7 @@ button {
     display: none;
   }
   .header.active .menu {
-    left: -50%;
+    left: 0;
     opacity: 1;
   }
   .header.active .burger-button__span {
